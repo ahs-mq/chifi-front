@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import './index.css';
-import dotenv from 'dotenv';
 import headphones from './assets/headphones.webp';
 import cable from './assets/cable.webp';
 import dac from './assets/dac.webp';
-dotenv.config();
+
 function App() {
   const { t, i18n } = useTranslation();
   const [contact, setContact] = useState('');
