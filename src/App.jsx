@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import './index.css';
+import dotenv from 'dotenv';
+
 import headphones from './assets/headphones.webp';
 import cable from './assets/cable.webp';
 import dac from './assets/dac.webp';
-
+dotenv.config();
 function App() {
   const { t, i18n } = useTranslation();
   const [contact, setContact] = useState('');
@@ -36,7 +38,7 @@ function App() {
 
     setStatus('loading');
     try {
-      await axios.post('https://your-api.railway.app/api/leads', {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/leads`, {
         contact: contact,
         type: isEmail ? 'email' : 'whatsapp'
       });
