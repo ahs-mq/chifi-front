@@ -5,6 +5,7 @@ import './index.css';
 import headphones from './assets/headphones.webp';
 import cable from './assets/cable.webp';
 import dac from './assets/dac.webp';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -134,6 +135,7 @@ function App() {
         <p>{t('footer_tag')}</p>
         <p className="mt-2 opacity-50">© 2026 SADA Audio</p>
       </footer>
+      <Analytics />
     </div>
   );
 }

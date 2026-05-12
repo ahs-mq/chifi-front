@@ -20,7 +20,7 @@ i18n
                     "iem_title": "IEMs",
                     "iem_desc": "Multi-driver precision for every detail.",
                     "cable_title": "Cables and Dongles",
-                    "cable_desc": "Interchangeable connections for any device—anytime, anywhere.",
+                    "cable_desc": "Interchangeable connections for any device - anytime, anywhere.",
                     "dac_title": "DACs",
                     "dac_desc": "Clean, amplified power at home or on the go.",
                     "trust_fast_delivery": "Fast Local Delivery",
